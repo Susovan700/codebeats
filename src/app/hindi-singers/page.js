@@ -22,7 +22,7 @@ export default function HindiSingers() {
     {
       name: "Armaan Malik",
       image: "/aarman-malik.jpeg",
-      route: "/hindi-singers/aarman-malik"
+      route: "/hindi-singers/armaan-malik"
     },
     {
       name: "Atif Aslam",

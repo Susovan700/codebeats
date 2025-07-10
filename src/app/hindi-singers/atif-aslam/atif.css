@@ -1,0 +1,379 @@
+
+.hindis-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hindis-main {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  margin-left: 250px;
+  max-width: 1200px;
+  margin-right: auto;
+  gap: 2rem;
+}
+
+.hindis-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.hindis-right {
+  flex: 1;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  padding-left: 1rem;
+
+}
+
+.hindis-navigation-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.hindis-back-button {
+  background: linear-gradient(45deg, #a855f7, rgb(88, 62, 218));
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(168, 85, 247, 0.3);
+}
+
+.hindis-back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(168, 85, 247, 0.5);
+}
+
+.hindis-navigation-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #a855f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hindis-artist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width:500px;
+}
+
+.hindis-artist-image {
+  flex-shrink: 0;
+}
+
+.hindis-artist-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #a855f7;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hindis-artist-image img:hover {
+  transform: scale(1.05);
+}
+
+.hindis-artist-details h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.hindis-artist-details p {
+  margin: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.hindis-artist-details p:last-child {
+  color: #a855f7;
+  font-weight: 600;
+}
+
+.songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.song-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #a855f7;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15);
+}
+
+.song-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a855f7;
+  width: 40px;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.song-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.song-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.song-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.song-album {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.song-duration {
+  color: #a855f7;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.song-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.play-button, .add-button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.play-button {
+  background: linear-gradient(90deg, #a855f7, #a855f7);
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+}
+
+.add-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.add-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .ed-sheeran-main {
+    margin-left: 0;
+    margin-top: 60px;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right {
+    padding-left: 0;
+    position: static;
+    order: -1;
+  }
+
+  .hindis-navigation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hindis-navigation-header h2 {
+    font-size: 2rem;
+  }
+
+  .hindis-artist-info {
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .hindis-artist-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hindis-artist-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .song-item {
+    padding: 1rem;
+  }
+
+  .song-number {
+    width: 30px;
+    font-size: 1rem;
+  }
+
+  .song-title {
+    font-size: 1.1rem;
+  }
+
+  .song-details {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .play-button, .add-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ed-sheeran-main {
+    padding: 0.75rem;
+  }
+
+  .hindis-navigation-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .hindis-artist-info {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hindis-artist-image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hindis-artist-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .song-item {
+    padding: 0.75rem;
+  }
+
+  .song-actions {
+    gap: 0.5rem;
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.song-item {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.song-item:nth-child(1) { animation-delay: 0.1s; }
+.song-item:nth-child(2) { animation-delay: 0.2s; }
+.song-item:nth-child(3) { animation-delay: 0.3s; }
+.song-item:nth-child(4) { animation-delay: 0.4s; }
+.song-item:nth-child(5) { animation-delay: 0.5s; }
+.song-item:nth-child(6) { animation-delay: 0.6s; }
+.song-item:nth-child(7) { animation-delay: 0.7s; }
+.song-item:nth-child(8) { animation-delay: 0.8s; }
+.song-item:nth-child(9) { animation-delay: 0.9s; }
+.song-item:nth-child(10) { animation-delay: 1s; }
+
+.songs-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.songs-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.songs-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #a855f7, #ffffff);
+  border-radius: 10px;
+}
+
+.songs-list::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #a855f7, #ffffff);
+}
