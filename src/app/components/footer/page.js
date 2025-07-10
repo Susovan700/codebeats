@@ -1,3 +1,4 @@
+"use client"
 import "./footer.css";
 import { useState } from "react";
 export default function Footer() {

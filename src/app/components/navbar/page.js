@@ -1,3 +1,4 @@
+"use client"
 import { useRef, useState, useEffect } from "react";
 import "./navbar.css";
 import Profile from "../profile/page";
