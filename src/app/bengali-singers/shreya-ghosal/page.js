@@ -1,63 +1,62 @@
 "use client";
-import "./sheeran.css";
+import "./shreya.css";
 import Sidebar from "../../components/sidebar/page";
 import Navbar from "../../components/navbar/page";
 import Footer from "../../components/footer/page";
 import { useRouter } from "next/navigation";
 
-export default function edSheeranSongs() {
+export default function shreyaGhoshalSongs() {
   const router = useRouter();
-
-  const edSheeranSongs = [
+  const shreyaGhoshalSongs = [
     {
-      title: "Shape of You",
-      duration: "3:53",
-      album: "÷ (Divide)",
+      title: "Teri Ore",
+      duration: "5:03",
+      album: "Singh Is Kinng",
     },
     {
-      title: "Perfect",
-      duration: "4:23",
-      album: "÷ (Divide)",
+      title: "Sun Raha Hai (Female)",
+      duration: "5:20",
+      album: "Aashiqui 2",
     },
     {
-      title: "Thinking Out Loud",
-      duration: "4:41",
-      album: "x (Multiply)",
+      title: "Agar Tum Mil Jao",
+      duration: "5:37",
+      album: "Zeher",
     },
     {
-      title: "Photograph",
-      duration: "4:18",
-      album: "x (Multiply)",
+      title: "Saans",
+      duration: "4:40",
+      album: "Jab Tak Hai Jaan",
     },
     {
-      title: "Castle on the Hill",
-      duration: "4:21",
-      album: "÷ (Divide)",
+      title: "Manwa Laage",
+      duration: "4:25",
+      album: "Happy New Year",
     },
     {
-      title: "Galway Girl",
-      duration: "2:50",
-      album: "÷ (Divide)",
+      title: "Piyu Bole",
+      duration: "5:17",
+      album: "Parineeta",
     },
     {
-      title: "Bad Habits",
-      duration: "3:51",
-      album: "= (Equals)",
+      title: "Bairi Piya",
+      duration: "5:02",
+      album: "Devdas",
     },
     {
-      title: "Shivers",
-      duration: "3:28",
-      album: "= (Equals)",
+      title: "Silsila Ye Chaahat Ka",
+      duration: "4:59",
+      album: "Devdas",
     },
     {
-      title: "Happier",
-      duration: "3:27",
-      album: "÷ (Divide)",
+      title: "Chikni Chameli",
+      duration: "5:03",
+      album: "Agneepath",
     },
     {
-      title: "The A Team",
-      duration: "4:18",
-      album: "+ (Plus)",
+      title: "Bojhena Se Bojhena",
+      duration: "4:42",
+      album: "Bojhena Shey Bojhena",
     },
   ];
 
@@ -74,19 +73,19 @@ export default function edSheeranSongs() {
   };
 
   return (
-    <div className="eng-container">
+    <div className="bengalis-container">
       <Sidebar />
       <Navbar />
-      <div className="eng-main">
-        <div className="eng-left">
-          <div className="eng-navigation-header">
-            <button className="eng-back-button" onClick={handleBackClick}>
+      <div className="bengalis-main">
+        <div className="bengalis-left">
+          <div className="bengalis-navigation-header">
+            <button className="bengalis-back-button" onClick={handleBackClick}>
               ← Back to Singers
             </button>
-            <h2>Ed Sheeran - Songs</h2>
+            <h2>Shreya Ghoshal - Songs</h2>
           </div>
           <div className="songs-list">
-            {edSheeranSongs.map((song, index) => (
+            {shreyaGhoshalSongs.map((song, index) => (
               <div key={index} className="song-item">
                 <div className="song-number">{index + 1}</div>
                 <div className="song-info">
@@ -114,15 +113,15 @@ export default function edSheeranSongs() {
             ))}
           </div>
         </div>
-        <div className="eng-right">
-          <div className="eng-artist-info">
-            <div className="eng-artist-image">
-              <img src="/ed-sheeran.jpeg" alt="Ed Sheeran" />
+        <div className="bengalis-right">
+          <div className="bengalis-artist-info">
+            <div className="bengalis-artist-image">
+              <img src="/shreya-ghosal.webp" alt="Anupam Roy" />
             </div>
-            <div className="eng-artist-details">
-              <h3>Ed Sheeran</h3>
-              <p>English singer-songwriter</p>
-              <p>{edSheeranSongs.length} songs available</p>
+            <div className="bengalis-artist-details">
+              <h3>Shreya Ghoshal</h3>
+              <p>Bengali-Singer songwriter</p>
+              <p>{shreyaGhoshalSongs.length} songs available</p>
             </div>
           </div>
         </div>

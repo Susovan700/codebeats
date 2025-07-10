@@ -1,63 +1,63 @@
 "use client";
-import "./sheeran.css";
+import "./rosalia.css";
 import Sidebar from "../../components/sidebar/page";
 import Navbar from "../../components/navbar/page";
 import Footer from "../../components/footer/page";
 import { useRouter } from "next/navigation";
 
-export default function edSheeranSongs() {
+export default function RosaliaSongs() {
   const router = useRouter();
 
-  const edSheeranSongs = [
+  const rosaliaSongs = [
     {
-      title: "Shape of You",
-      duration: "3:53",
-      album: "÷ (Divide)",
+      title: "DESPECHÁ",
+      duration: "2:38",
+      album: "MOTOMAMI",
     },
     {
-      title: "Perfect",
-      duration: "4:23",
-      album: "÷ (Divide)",
+      title: "SAOKO",
+      duration: "2:17",
+      album: "MOTOMAMI",
     },
     {
-      title: "Thinking Out Loud",
-      duration: "4:41",
-      album: "x (Multiply)",
+      title: "LA FAMA (feat. The Weeknd)",
+      duration: "3:08",
+      album: "MOTOMAMI",
     },
     {
-      title: "Photograph",
-      duration: "4:18",
-      album: "x (Multiply)",
+      title: "BIZCOCHITO",
+      duration: "1:49",
+      album: "MOTOMAMI",
     },
     {
-      title: "Castle on the Hill",
-      duration: "4:21",
-      album: "÷ (Divide)",
+      title: "MALAMENTE",
+      duration: "2:30",
+      album: "El Mal Querer",
     },
     {
-      title: "Galway Girl",
-      duration: "2:50",
-      album: "÷ (Divide)",
+      title: "PIENSO EN TU MIRÁ",
+      duration: "3:11",
+      album: "El Mal Querer",
     },
     {
-      title: "Bad Habits",
-      duration: "3:51",
-      album: "= (Equals)",
+      title: "DI MI NOMBRE",
+      duration: "2:41",
+      album: "El Mal Querer",
     },
     {
-      title: "Shivers",
-      duration: "3:28",
-      album: "= (Equals)",
+      title: "DE AQUÍ NO SALES",
+      duration: "2:24",
+      album: "El Mal Querer",
     },
     {
-      title: "Happier",
-      duration: "3:27",
-      album: "÷ (Divide)",
+      title: "Con Altura (feat. J Balvin)",
+      duration: "2:41",
+      album: "Single",
     },
     {
-      title: "The A Team",
-      duration: "4:18",
-      album: "+ (Plus)",
+      title: "Yo x Ti, Tu x Mi (feat. Ozuna)",
+      duration: "3:06",
+      album: "Single",
     },
   ];
 
@@ -67,6 +67,7 @@ export default function edSheeranSongs() {
 
   const handlePlaySong = (song) => {
     console.log(`Playing: ${song.title}`);
+    // Add your play functionality here
   };
 
   const handleAddSong = (song) => {
@@ -74,19 +75,19 @@ export default function edSheeranSongs() {
   };
 
   return (
-    <div className="eng-container">
+    <div className="spanishs-container">
       <Sidebar />
       <Navbar />
-      <div className="eng-main">
-        <div className="eng-left">
-          <div className="eng-navigation-header">
-            <button className="eng-back-button" onClick={handleBackClick}>
+      <div className="spanishs-main">
+        <div className="spanishs-left">
+          <div className="spanishs-navigation-header">
+            <button className="spanishs-back-button" onClick={handleBackClick}>
               ← Back to Singers
             </button>
-            <h2>Ed Sheeran - Songs</h2>
+            <h2>A Rosalía - Songs</h2>
           </div>
           <div className="songs-list">
-            {edSheeranSongs.map((song, index) => (
+            {rosaliaSongs.map((song, index) => (
               <div key={index} className="song-item">
                 <div className="song-number">{index + 1}</div>
                 <div className="song-info">
@@ -114,15 +115,15 @@ export default function edSheeranSongs() {
             ))}
           </div>
         </div>
-        <div className="eng-right">
-          <div className="eng-artist-info">
-            <div className="eng-artist-image">
-              <img src="/ed-sheeran.jpeg" alt="Ed Sheeran" />
+        <div className="spanishs-right">
+          <div className="spanishs-artist-info">
+            <div className="spanishs-artist-image">
+              <img src="/rosalia.jpeg" alt=" Rosalía Vila Tobella" />
             </div>
-            <div className="eng-artist-details">
-              <h3>Ed Sheeran</h3>
-              <p>English singer-songwriter</p>
-              <p>{edSheeranSongs.length} songs available</p>
+            <div className="spanishs-artist-details">
+              <h3> Rosalía Vila Tobella</h3>
+              <p>Spanish Singer-Songwriter</p>
+              <p>{rosaliaSongs.lspanishsth}10 songs available</p>
             </div>
           </div>
         </div>

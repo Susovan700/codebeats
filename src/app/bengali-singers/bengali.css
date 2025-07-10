@@ -84,7 +84,7 @@
   transform: translateY(0);
 }
 
-.eng-navigation-header h2 {
+.bengali-navigation-header h2 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -117,6 +117,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 200px;
+  width:200px;
 }
 
 .singer-card::before {
@@ -192,7 +194,7 @@
     padding: 1rem;
   }
 
-  .navigation-header {
+  .bengali-navigation-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -217,7 +219,7 @@
     padding: 0.5rem;
   }
 
-  .eng-navigation-header h2 {
+  .bengali-navigation-header h2 {
     font-size: 1.5rem;
   }
 
@@ -240,7 +242,7 @@
   }
 }
 
-/* Loading Animation */
+
 @keyframes shimmer {
   0% {
     background-position: -200px 0;
@@ -267,12 +269,12 @@
   outline-offset: 2px;
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+
 .bengali-main::-webkit-scrollbar {
   width: 8px;
 }

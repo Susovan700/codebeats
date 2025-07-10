@@ -1,4 +1,4 @@
-/* spanishlish Singers Section Styles */
+/* English Singers Section Styles */
 .spanish-container {
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@
   transform: translateY(0);
 }
 
-.spanish-navigation-header h2 {
+.eng-navigation-header h2 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -176,7 +176,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .spanishlish-main {
+  .spanish-main {
     margin-left: 0;
     padding: 1.5rem;
   }
@@ -188,11 +188,11 @@
 }
 
 @media (max-width: 768px) {
-  .spanishlish-main {
+  .spanish-main {
     padding: 1rem;
   }
 
-  .navigation-header {
+  .spanish-navigation-header{
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -213,7 +213,7 @@
 }
 
 @media (max-width: 480px) {
-  .spanishlish-main {
+  .spanish-main {
     padding: 0.5rem;
   }
 
@@ -273,20 +273,20 @@ html {
 }
 
 /* Custom scrollbar */
-.spanishlish-main::-webkit-scrollbar {
+.spanish-main::-webkit-scrollbar {
   width: 8px;
 }
 
-.spanishlish-main::-webkit-scrollbar-track {
+.spanish-main::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
 
-.spanishlish-main::-webkit-scrollbar-thumb {
+.spanish-main::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
 
-.spanishlish-main::-webkit-scrollbar-thumb:hover {
+.spanish-main::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
 }

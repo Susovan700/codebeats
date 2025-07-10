@@ -1,5 +1,5 @@
 "use client";
-import "./spanish.css"; 
+import "./spanish.css";
 import Sidebar from "../components/sidebar/page";
 import Navbar from "../components/navbar/page";
 import Footer from "../components/footer/page";
@@ -36,8 +36,8 @@ export default function SpanishSingers() {
     }
   ];
 
-  const handleSingerClick = (cantante) => {
-    router.push(cantante.route);
+  const handleSingerClick = (singer) => {
+    router.push(singer.route);
   };
 
   const handleBackClick = () => {
@@ -55,23 +55,23 @@ export default function SpanishSingers() {
           </button>
           <h2>Spanish Singers</h2>
         </div>
-
+        
         <div className="singers-grid">
-          {spanishSingers.map((cantante, index) => (
-            <div
-              key={index}
+          {spanishSingers.map((singer, index) => (
+            <div 
+              key={index} 
               className="singer-card"
-              onClick={() => handleSingerClick(cantante)}
+              onClick={() => handleSingerClick(singer)}
             >
-              <div
+              <div 
                 className="singer-image"
                 style={{
-                  backgroundImage: `url(${cantante.image})`,
+                  backgroundImage: `url(${singer.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               ></div>
-              <div className="singer-name">{cantante.name}</div>
+              <div className="singer-name">{singer.name}</div>
             </div>
           ))}
         </div>

@@ -1,63 +1,63 @@
 "use client";
-import "./sheeran.css";
+import "./shakira.css";
 import Sidebar from "../../components/sidebar/page";
 import Navbar from "../../components/navbar/page";
 import Footer from "../../components/footer/page";
 import { useRouter } from "next/navigation";
 
-export default function edSheeranSongs() {
+export default function ShakiraSongs() {
   const router = useRouter();
 
-  const edSheeranSongs = [
+  const shakiraSongs = [
     {
-      title: "Shape of You",
-      duration: "3:53",
-      album: "÷ (Divide)",
+      title: "Hips Don't Lie (feat. Wyclef Jean)",
+      duration: "3:38",
+      album: "Oral Fixation, Vol. 2",
     },
     {
-      title: "Perfect",
-      duration: "4:23",
-      album: "÷ (Divide)",
+      title: "Waka Waka (This Time for Africa)",
+      duration: "3:22",
+      album: "Sale el Sol",
     },
     {
-      title: "Thinking Out Loud",
-      duration: "4:41",
-      album: "x (Multiply)",
+      title: "Whenever, Wherever",
+      duration: "3:16",
+      album: "Laundry Service",
     },
     {
-      title: "Photograph",
-      duration: "4:18",
-      album: "x (Multiply)",
+      title: "La La La (Brazil 2014)",
+      duration: "3:07",
+      album: "Shakira.",
     },
     {
-      title: "Castle on the Hill",
-      duration: "4:21",
-      album: "÷ (Divide)",
+      title: "She Wolf",
+      duration: "3:08",
+      album: "She Wolf",
     },
     {
-      title: "Galway Girl",
-      duration: "2:50",
-      album: "÷ (Divide)",
+      title: "Beautiful Liar (with Beyoncé)",
+      duration: "3:20",
+      album: "B'Day (Deluxe Edition)",
     },
     {
-      title: "Bad Habits",
-      duration: "3:51",
-      album: "= (Equals)",
+      title: "Underneath Your Clothes",
+      duration: "3:45",
+      album: "Laundry Service",
     },
     {
-      title: "Shivers",
-      duration: "3:28",
-      album: "= (Equals)",
+      title: "Chantaje (feat. Maluma)",
+      duration: "3:15",
+      album: "El Dorado",
     },
     {
-      title: "Happier",
-      duration: "3:27",
-      album: "÷ (Divide)",
+      title: "Loca (feat. El Cata)",
+      duration: "3:03",
+      album: "Sale el Sol",
     },
     {
-      title: "The A Team",
-      duration: "4:18",
-      album: "+ (Plus)",
+      title: "Empire",
+      duration: "3:59",
+      album: "Shakira.",
     },
   ];
 
@@ -67,6 +67,7 @@ export default function edSheeranSongs() {
 
   const handlePlaySong = (song) => {
     console.log(`Playing: ${song.title}`);
+    // Add your play functionality here
   };
 
   const handleAddSong = (song) => {
@@ -74,19 +75,19 @@ export default function edSheeranSongs() {
   };
 
   return (
-    <div className="eng-container">
+    <div className="spanishs-container">
       <Sidebar />
       <Navbar />
-      <div className="eng-main">
-        <div className="eng-left">
-          <div className="eng-navigation-header">
-            <button className="eng-back-button" onClick={handleBackClick}>
+      <div className="spanishs-main">
+        <div className="spanishs-left">
+          <div className="spanishs-navigation-header">
+            <button className="spanishs-back-button" onClick={handleBackClick}>
               ← Back to Singers
             </button>
-            <h2>Ed Sheeran - Songs</h2>
+            <h2>Shakira - Songs</h2>
           </div>
           <div className="songs-list">
-            {edSheeranSongs.map((song, index) => (
+            {shakiraSongs.map((song, index) => (
               <div key={index} className="song-item">
                 <div className="song-number">{index + 1}</div>
                 <div className="song-info">
@@ -114,15 +115,15 @@ export default function edSheeranSongs() {
             ))}
           </div>
         </div>
-        <div className="eng-right">
-          <div className="eng-artist-info">
-            <div className="eng-artist-image">
-              <img src="/ed-sheeran.jpeg" alt="Ed Sheeran" />
+        <div className="spanishs-right">
+          <div className="spanishs-artist-info">
+            <div className="spanishs-artist-image">
+              <img src="/shakira.jpeg" alt=" Shakira" />
             </div>
-            <div className="eng-artist-details">
-              <h3>Ed Sheeran</h3>
-              <p>English singer-songwriter</p>
-              <p>{edSheeranSongs.length} songs available</p>
+            <div className="spanishs-artist-details">
+              <h3> Shakira</h3>
+              <p>Spanish Singer-Songwriter</p>
+              <p>{shakiraSongs.lspanishsth}10 songs available</p>
             </div>
           </div>
         </div>

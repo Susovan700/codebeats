@@ -1,65 +1,66 @@
 "use client";
-import "./sheeran.css";
+import "./arijit-bengali.css";
 import Sidebar from "../../components/sidebar/page";
 import Navbar from "../../components/navbar/page";
 import Footer from "../../components/footer/page";
 import { useRouter } from "next/navigation";
 
-export default function edSheeranSongs() {
+export default function arijitSinghbengaliSongs() {
   const router = useRouter();
 
-  const edSheeranSongs = [
-    {
-      title: "Shape of You",
-      duration: "3:53",
-      album: "÷ (Divide)",
-    },
-    {
-      title: "Perfect",
-      duration: "4:23",
-      album: "÷ (Divide)",
-    },
-    {
-      title: "Thinking Out Loud",
-      duration: "4:41",
-      album: "x (Multiply)",
-    },
-    {
-      title: "Photograph",
-      duration: "4:18",
-      album: "x (Multiply)",
-    },
-    {
-      title: "Castle on the Hill",
-      duration: "4:21",
-      album: "÷ (Divide)",
-    },
-    {
-      title: "Galway Girl",
-      duration: "2:50",
-      album: "÷ (Divide)",
-    },
-    {
-      title: "Bad Habits",
-      duration: "3:51",
-      album: "= (Equals)",
-    },
-    {
-      title: "Shivers",
-      duration: "3:28",
-      album: "= (Equals)",
-    },
-    {
-      title: "Happier",
-      duration: "3:27",
-      album: "÷ (Divide)",
-    },
-    {
-      title: "The A Team",
-      duration: "4:18",
-      album: "+ (Plus)",
-    },
-  ];
+const arijitSinghBengaliSongs = [
+   {
+    title: "Mon Majhi Re",
+    duration: "4:39",
+    album: "Boss",
+  },
+  {
+    title: "Tomake Chai",
+    duration: "4:08",
+    album: "Gangster",
+  },
+  {
+    title: "Ke Tui Bol",
+    duration: "3:52",
+    album: "Herogiri",
+  },
+  {
+    title: "Tumi Jake Bhalobasho",
+    duration: "4:36",
+    album: "Praktan",
+  },
+  {
+    title: "Shyamal Shaashon",
+    duration: "5:15",
+    album: "Jaatishwar",
+  },
+  {
+    title: "Egiye De",
+    duration: "4:01",
+    album: "Game",
+  },
+  {
+    title: "Ami Je Ke Tomar",
+    duration: "4:10",
+    album: "Ami Je Ke Tomar",
+  },
+  {
+    title: "Alo Chhaya",
+    duration: "3:42",
+    album: "Parineeta",
+  },
+  {
+    title: "Mon Boleche",
+    duration: "3:55",
+    album: "Game",
+  },
+  {
+    title: "Bojhena Shey Bojhena",
+    duration: "4:48",
+    album: "Bojhena Shey Bojhena",
+  },
+];
+
 
   const handleBackClick = () => {
     router.back();
@@ -74,19 +75,19 @@ export default function edSheeranSongs() {
   };
 
   return (
-    <div className="eng-container">
+    <div className="bengalis-container">
       <Sidebar />
       <Navbar />
-      <div className="eng-main">
-        <div className="eng-left">
-          <div className="eng-navigation-header">
-            <button className="eng-back-button" onClick={handleBackClick}>
+      <div className="bengalis-main">
+        <div className="bengalis-left">
+          <div className="bengalis-navigation-header">
+            <button className="bengalis-back-button" onClick={handleBackClick}>
               ← Back to Singers
             </button>
-            <h2>Ed Sheeran - Songs</h2>
+            <h2>Arijit Singh - Songs</h2>
           </div>
           <div className="songs-list">
-            {edSheeranSongs.map((song, index) => (
+            {arijitSinghBengaliSongs.map((song, index) => (
               <div key={index} className="song-item">
                 <div className="song-number">{index + 1}</div>
                 <div className="song-info">
@@ -114,15 +115,15 @@ export default function edSheeranSongs() {
             ))}
           </div>
         </div>
-        <div className="eng-right">
-          <div className="eng-artist-info">
-            <div className="eng-artist-image">
-              <img src="/ed-sheeran.jpeg" alt="Ed Sheeran" />
+        <div className="bengalis-right">
+          <div className="bengalis-artist-info">
+            <div className="bengalis-artist-image">
+              <img src="/arijit-singh.webp" alt="Arijit Singh" />
             </div>
-            <div className="eng-artist-details">
-              <h3>Ed Sheeran</h3>
-              <p>English singer-songwriter</p>
-              <p>{edSheeranSongs.length} songs available</p>
+            <div className="bengalis-artist-details">
+              <h3>Arijit Singh</h3>
+              <p>Bengali-Singer songwriter</p>
+              <p>{arijitSinghBengaliSongs.length} songs available</p>
             </div>
           </div>
         </div>

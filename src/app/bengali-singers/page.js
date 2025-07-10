@@ -12,7 +12,7 @@ export default function BengaliSingers() {
     {
       name: "Arijit Singh",
       image: "/arijit-singh.webp",
-      route: "/bengali-singers/arijit-singh",
+      route: "/bengali-singers/arijit-singh-bengali",
     },
     {
       name: "Anupam Roy",
@@ -22,12 +22,17 @@ export default function BengaliSingers() {
     {
       name: "Shreya Ghosal",
       image: "/shreya-ghosal.webp",
-      route: "/bengali-singers/arijit-singh",
+      route: "/bengali-singers/shreya-ghosal",
     },
     {
       name: "Srikanta Acharya",
       image: "/srikanta-acharya.jpeg",
-      route: "/bengali-singers/arijit-singh",
+      route: "/bengali-singers/srikanta-acharya",
+    },
+    {
+      name: "Nachiketa Chakraborty",
+      image: "/nachiketa.jpeg",
+      route: "/bengali-singers/nachiketa",
     },
   ];
 

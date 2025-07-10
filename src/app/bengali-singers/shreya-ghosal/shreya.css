@@ -1,5 +1,5 @@
 
-.eng-container {
+.bengalis-container {
   display: flex;
   flex-direction: column;
   min-height: 80vh;
@@ -8,7 +8,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.eng-main {
+.bengalis-main {
   display: flex;
   flex: 1;
   padding: 2rem;
@@ -18,13 +18,13 @@
   gap: 2rem;
 }
 
-.eng-left {
+.bengalis-left {
   flex: 2;
   display: flex;
   flex-direction: column;
 }
 
-.eng-right {
+.bengalis-right {
   flex: 1;
   position: sticky;
   top: 2rem;
@@ -33,14 +33,14 @@
 
 }
 
-.eng-navigation-header {
+.bengalis-navigation-header {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
   gap: 1rem;
 }
 
-.eng-back-button {
+.bengalis-back-button {
   background: linear-gradient(45deg, #a855f7, rgb(88, 62, 218));
   color: white;
   border: none;
@@ -53,12 +53,12 @@
   box-shadow: 0 4px 8px rgba(168, 85, 247, 0.3);
 }
 
-.eng-back-button:hover {
+.bengalis-back-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(168, 85, 247, 0.5);
 }
 
-.eng-navigation-header h2 {
+.bengalis-navigation-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
@@ -67,7 +67,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.eng-artist-info {
+.bengalis-artist-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,11 +82,11 @@
   width:500px;
 }
 
-.eng-artist-image {
+.bengalis-artist-image {
   flex-shrink: 0;
 }
 
-.eng-artist-image img {
+.bengalis-artist-image img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -96,25 +96,25 @@
   transition: transform 0.3s ease;
 }
 
-.eng-artist-image img:hover {
+.bengalis-artist-image img:hover {
   transform: scale(1.05);
 }
 
-.eng-artist-details h3 {
+.bengalis-artist-details h3 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: #ffffff;
 }
 
-.eng-artist-details p {
+.bengalis-artist-details p {
   margin: 0.25rem 0;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
   font-size: 1.1rem;
 }
 
-.eng-artist-details p:last-child {
+.bengalis-artist-details p:last-child {
   color: #a855f7;
   font-weight: 600;
 }
@@ -234,7 +234,7 @@
 }
 
 @media (max-width: 768px) {
-  .eng-main {
+  .bengalis-main {
     margin-left: 0;
     margin-top: 60px;
     padding: 1rem;
@@ -242,35 +242,35 @@
     gap: 1rem;
   }
 
-  .eng-right {
+  .bengalis-right {
     padding-left: 0;
     position: static;
     order: -1;
   }
 
-  .eng-navigation-header {
+  .bengalis-navigation-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .eng-navigation-header h2 {
+  .bengalis-navigation-header h2 {
     font-size: 2rem;
   }
 
-  .eng-artist-info {
+  .bengalis-artist-info {
     flex-direction: row;
     text-align: left;
     gap: 1.5rem;
     padding: 1.5rem;
   }
 
-  .eng-artist-image img {
+  .bengalis-artist-image img {
     width: 100px;
     height: 100px;
   }
 
-  .eng-artist-details h3 {
+  .bengalis-artist-details h3 {
     font-size: 1.5rem;
   }
 
@@ -301,26 +301,26 @@
 }
 
 @media (max-width: 480px) {
-  .eng-main {
+  .bengalis-main {
     padding: 0.75rem;
   }
 
-  .eng-navigation-header h2 {
+  .bengalis-navigation-header h2 {
     font-size: 1.5rem;
   }
 
-  .eng-artist-info {
+  .bengalis-artist-info {
     padding: 1rem;
     flex-direction: column;
     text-align: center;
   }
 
-  .eng-artist-image img {
+  .bengalis-artist-image img {
     width: 80px;
     height: 80px;
   }
 
-  .eng-artist-details h3 {
+  .bengalis-artist-details h3 {
     font-size: 1.25rem;
   }
 

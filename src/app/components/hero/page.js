@@ -3,11 +3,10 @@ import { Play, Heart, MoreHorizontal } from 'lucide-react';
 import "./hero.css";
 
 export default function Hero() {
-  // Sample data for the music app
   const featuredAlbums = [
     { id: 1, title: "Midnight Vibes", artist: "Luna Eclipse", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop", plays: "2.1M" },
     { id: 2, title: "Digital Dreams", artist: "Cyber Sounds", image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=300&h=300&fit=crop", plays: "1.8M" },
-    { id: 3, title: "Neon Nights", artist: "Synthwave Pro", image: "https://images.unsplash.com/photo-1571974599782-87624638275c?w=300&h=300&fit=crop", plays: "3.2M" },
+    { id: 3, title: "Neon Nights", artist: "Synthwave Pro", image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=300&h=300&fit=crop", plays: "3.2M" },
     { id: 4, title: "Bass Drop", artist: "Heavy Beats", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop", plays: "2.7M" }
   ];
 
@@ -15,12 +14,12 @@ export default function Hero() {
     { id: 1, name: "Luna Eclipse", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop", followers: "12.3M" },
     { id: 2, name: "Cyber Sounds", image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop", followers: "8.7M" },
     { id: 3, name: "Synthwave Pro", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop", followers: "15.1M" },
-    { id: 4, name: "Heavy Beats", image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=150&h=150&fit=crop", followers: "6.9M" }
+
   ];
 
   const recentPlays = [
     { id: 1, title: "Electric Pulse", artist: "Neon Rider", duration: "3:24", image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=50&h=50&fit=crop" },
-    { id: 2, title: "Midnight Code", artist: "Data Stream", duration: "4:12", image: "https://images.unsplash.com/photo-1571974599782-87624638275c?w=50&h=50&fit=crop" },
+    { id: 2, title: "Midnight Code", artist: "Data Stream", duration: "4:12", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" },
     { id: 3, title: "Binary Beat", artist: "Algo Rhythm", duration: "2:58", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=50&h=50&fit=crop" },
     { id: 4, title: "Debug Mode", artist: "Code Melody", duration: "3:45", image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=50&h=50&fit=crop" }
   ];
