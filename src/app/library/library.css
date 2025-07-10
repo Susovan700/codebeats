@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+.library-main {
+  background-color: #121212;
+  margin-left: 210px;
+  height: 82vh;
+  width: 88.5vw;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 25px;
+  overflow-y: auto;
+  position: relative;
+  h2 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(#a855f7, #b8bacc, rgb(88, 62, 218));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .language-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-top: 15px;
+  }
+  .language-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+  }
+  .language-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .language-card:hover {
+    transform: rotate(3deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .song-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+  }
+  .language-name-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    z-index: 2;
+    filter: brightness(0.5) contrast(2);
+  }
+
+  .navigation-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .back-button {
+    background: linear-gradient(45deg, #a855f7, rgb(88, 62, 218));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(168, 85, 247, 0.3);
+  }
+
+  .back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(168, 85, 247, 0.5);
+  }
+
+  .singers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+  }
+
+  .singer-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .singer-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(168, 85, 247, 0.1),
+      rgba(88, 62, 218, 0.1)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .singer-card:hover::before {
+    opacity: 1;
+  }
+
+  .singer-card:hover {
+    transform: rotate(2deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(168, 85, 247, 0.3);
+  }
+
+  .singer-image {
+    width: 100%;
+    height: 180px;
+    background-color: #2a2a2a;
+    position: relative;
+    z-index: 2;
+  }
+
+  .singer-name {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    z-index: 2;
+  }
+
+  .artist-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #1e1e1e;
+    border-radius: 15px;
+  }
+
+  .artist-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #2a2a2a;
+  }
+
+  .artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .artist-details h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    background: linear-gradient(#a855f7, #b8bacc, rgb(88, 62, 218));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .artist-details p {
+    margin: 5px 0;
+    color: #b8bacc;
+    font-size: 16px;
+  }
+
+  .songs-list {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .song-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+  }
+
+  .song-item:hover {
+    background: #2a2a2a;
+  }
+
+  .song-item:last-child {
+    border-bottom: none;
+  }
+
+  .song-number {
+    width: 40px;
+    font-weight: bold;
+    color: #b8bacc;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+  }
+
+  .song-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .song-title {
+    font-size: 18px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .song-details {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #b8bacc;
+  }
+
+  .song-album {
+    font-style: italic;
+  }
+
+  .song-duration {
+    color: #888;
+  }
+
+  .song-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .play-button,
+  .add-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .play-button {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+  }
+
+  .play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.5);
+  }
+
+  .add-button {
+    background: linear-gradient(45deg, #a855f7, rgb(88, 62, 218));
+    color: white;
+    box-shadow: 0 2px 4px rgba(168, 85, 247, 0.3);
+  }
+
+  .add-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(168, 85, 247, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .singers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .artist-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .artist-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .song-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
